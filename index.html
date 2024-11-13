@@ -7,8 +7,19 @@
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "sW2wR2idfa9pZ5Wd8",
+      });
+   })();
+</script>
   </head>
   <body>
     <section id="landing-page">
@@ -131,18 +142,18 @@
           <h3 class="modal__sub-title modal__sub-title--contact">
             I'm currently open to new opportunities.
           </h3>
-          <form id="contact__form" action="">
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">Name</label>
-              <input type="input" name="user__name" type="text" required></input>
+              <input type="input" name="user_name" type="text" ></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Email</label>
-              <input type="input" name="user__email" type="text" required></input>
+              <input type="input" name="user_email" type="text" ></input>
             </div>
             <div class="form__item">
               <label class="form__item--label">Message</label>
-              <textarea type="input" name="message" type="text" required></textarea>
+              <textarea type="input" name="message" type="text" ></textarea>
             </div>
             <button id="contact__submit" class="form__submit">
               Send it my way
