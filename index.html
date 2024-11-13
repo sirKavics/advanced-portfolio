@@ -104,7 +104,7 @@
             </figure>
             <figure class="modal__language">
               <img class="modal__language--img" src="./assets/React logo.png" alt="">
-              <span class="language__name">REACT</span>
+              <span class="language__name">React</span>
             </figure>
             <figure class="modal__language">
               <img class="modal__language--img" src="./assets/HTML5 logo.png" alt="">
@@ -124,7 +124,38 @@
             </figure>
           </div>
         </div>
-        <div class="modal__half modal__contact">Let's have a chat!</div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h3>
+          <form id="contact__form" action="">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input type="input" name="user__name" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input type="input" name="user__email" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea type="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-sync"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! <br>Looking forward to speaking to you soon.
+          </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
     <section id="projects">
