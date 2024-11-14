@@ -1,12 +1,25 @@
-// service_gmsym2s
-// template_4dfmrqv
-// sW2wR2idfa9pZ5Wd8
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList += " dark-theme"
+  }
+  else {
+    document.body.classList.remove("dark-theme")
+  }
+}
 
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(".modal__overlay--loading");
   const success = document.querySelector(".modal__overlay--success");
   loading.classList += " modal__overlay--visible";
+
+// service_gmsym2s
+// template_4dfmrqv
+// sW2wR2idfa9pZ5Wd8
 
   emailjs
     .sendForm(
@@ -27,7 +40,6 @@ function contact(event) {
     });
 }
 
-let isModalOpen = false;
 function toggleModal () {
   if (isModalOpen) {
     isModalOpen = false;
