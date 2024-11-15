@@ -575,6 +575,7 @@ nav {
 */
 
 footer {
+  position: relative;
   background-color: #242424;
   display: flex;
   padding: 6% 0;
@@ -658,3 +659,35 @@ footer {
   top: 80vh;
   left: 80vw;
 }
+
+/* 
+
+  RESPONSIVENESS
+
+*/
+
+/* Small phones, tablets, large smartphones */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 80px;
+  }
+  .header__para {
+    font-size: 20px;
+  }
+  .modal {
+    top: 0;
+    left: 0;
+    transform: none;
+    height: auto;
+    width: 100%;
+    flex-direction: column-reverse;
+    border-radius: 0;
+  }
+  .modal__half {
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width:)
