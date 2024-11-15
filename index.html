@@ -32,7 +32,7 @@
           />
         </figure>
         <ul class="nav__link--list">
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -41,7 +41,7 @@
           </li>
           <li class="nav__link">
             <a
-              href="#"
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -85,9 +85,11 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fas fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
@@ -101,6 +103,10 @@
             I currently work on extremely difficult engineering problems and learn from a team consisting of some of the most <b class="orange">talented</b> and <b class="orange">experienced</b> software engineers every day.
           </p>
           <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img" src="./assets/Adobe Creative Cloud.png" alt="">
+              <span class="language__name">Adobe CC</span>
+            </figure>
             <figure class="modal__language">
               <img class="modal__language--img" src="./assets/HTML5 logo.png" alt="">
               <span class="language__name">HTML</span>
@@ -116,10 +122,6 @@
             <figure class="modal__language">
               <img class="modal__language--img" src="./assets/React logo.png" alt="">
               <span class="language__name">React</span>
-            </figure>
-            <figure class="modal__language">
-              <img class="modal__language--img" src="./assets/HTML5 logo.png" alt="">
-              <span class="language__name">HTML</span>
             </figure>
             <figure class="modal__language">
               <img class="modal__language--img" src="./assets/HTML5 logo.png" alt="">
@@ -333,25 +335,25 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="#"
+              href="https://github.com/sirKavics" target="blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               GitHub
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/falfaria/" target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               LinkedIn
             </a>
             <a
-              href="#"
+              href="#" onclick="toggleModal()"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Contact
             </a>
             <a
-              href="#"
+              href="./assets/David Bragg Resume.pdf" target="blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
               Resume

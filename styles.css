@@ -7,6 +7,10 @@
   font-family: "roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style-type: none;
 }
@@ -225,9 +229,11 @@ nav,
   border: none;
   background-color: #242424;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 40px;
+  z-index: 100;
+  box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0,28);
 }
 
 .scroll {
@@ -283,7 +289,7 @@ nav {
 }
 
 #personal-logo {
-  width: 60px;
+  width: 70px;
 }
 
 .nav__link--list {
@@ -633,11 +639,13 @@ footer {
 .shape--3 {
   top: 50vh;
   left: 5vw;
+  display: none;
 }
 
 .shape--4 {
   top: 50vh;
   left: 50vw;
+  display: none;
 }
 
 .shape--5 {
@@ -690,4 +698,29 @@ footer {
 }
 
 /* Small phones */
-@media (max-width:)
+@media (max-width: 480px) {
+  .title {
+    font-size: 52px;
+  }
+  .header__para {
+    font-size: 18px;
+  }
+  .nav__link:first-child {
+    display: none;
+  }
+  .project__description--para {
+    display: none;
+  }
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .project__description--sub-title {
+    margin-bottom: 8px;
+  }
+  .modal__half {
+    padding: 40px;
+  }
+}
