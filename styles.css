@@ -695,6 +695,10 @@ footer {
   .modal__half {
     width: 100%;
   }
+
+.shape {
+  display: none;
+}
 }
 
 /* Small phones */
@@ -722,5 +726,8 @@ footer {
   }
   .modal__half {
     padding: 40px;
+  }
+  .shape {
+    display: none;
   }
 }
