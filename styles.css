@@ -674,6 +674,14 @@ footer {
 
 */
 
+/* Large smartpphones */
+
+@media (max-width: 1080px) {
+  .shape {
+    display: none;
+  }
+}
+
 /* Small phones, tablets, large smartphones */
 
 @media (max-width: 768px) {
